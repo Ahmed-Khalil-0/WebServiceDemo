@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F21634A3-1F4D-4515-B2B3-273561B87B5E}</ProjectGuid>
+    <ProjectGuid>{5CF584F6-41E8-4662-9DFE-D83A4D8C044D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>WebServiceConsumer</RootNamespace>
     <AssemblyName>WebServiceConsumer</AssemblyName>
