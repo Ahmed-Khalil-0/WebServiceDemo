@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\CalServiceReference\Reference.cs">
+    <Compile Include="Connected Services\CalcServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -55,8 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\CalServiceReference\CalculationWebService.wsdl" />
-    <None Include="Connected Services\CalServiceReference\WebServiceConsumer.CalServiceReference.HelloWorldResponse.datasource">
+    <None Include="Connected Services\CalcServiceReference\CalculationWebService.wsdl" />
+    <None Include="Connected Services\CalcServiceReference\WebServiceConsumer.CalcServiceReference.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -64,19 +68,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CalServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\CalcServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalServiceReference\CalculationWebService.disco" />
+    <None Include="Connected Services\CalcServiceReference\CalculationWebService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\CalcServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\CalcServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalServiceReference\Reference.svcmap">
+    <None Include="Connected Services\CalcServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

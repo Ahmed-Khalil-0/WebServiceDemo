@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebServiceConsumer.CalServiceReference {
+namespace WebServiceConsumer.CalcServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://khala.com/", ConfigurationName="CalServiceReference.CalculationWebServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://khala.com/", ConfigurationName="CalcServiceReference.CalculationWebServiceSoap")]
     public interface CalculationWebServiceSoap {
         
         // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://khala.com/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/HelloWorld", ReplyAction="*")]
-        WebServiceConsumer.CalServiceReference.HelloWorldResponse HelloWorld(WebServiceConsumer.CalServiceReference.HelloWorldRequest request);
+        WebServiceConsumer.CalcServiceReference.HelloWorldResponse HelloWorld(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/HelloWorld", ReplyAction="*")]
-        System.Threading.Tasks.Task<WebServiceConsumer.CalServiceReference.HelloWorldResponse> HelloWorldAsync(WebServiceConsumer.CalServiceReference.HelloWorldRequest request);
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.HelloWorldResponse> HelloWorldAsync(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/Add", ReplyAction="*")]
         int Add(int num1, int num2);
@@ -36,12 +36,12 @@ namespace WebServiceConsumer.CalServiceReference {
     public partial class HelloWorldRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://khala.com/", Order=0)]
-        public WebServiceConsumer.CalServiceReference.HelloWorldRequestBody Body;
+        public WebServiceConsumer.CalcServiceReference.HelloWorldRequestBody Body;
         
         public HelloWorldRequest() {
         }
         
-        public HelloWorldRequest(WebServiceConsumer.CalServiceReference.HelloWorldRequestBody Body) {
+        public HelloWorldRequest(WebServiceConsumer.CalcServiceReference.HelloWorldRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -63,12 +63,12 @@ namespace WebServiceConsumer.CalServiceReference {
     public partial class HelloWorldResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://khala.com/", Order=0)]
-        public WebServiceConsumer.CalServiceReference.HelloWorldResponseBody Body;
+        public WebServiceConsumer.CalcServiceReference.HelloWorldResponseBody Body;
         
         public HelloWorldResponse() {
         }
         
-        public HelloWorldResponse(WebServiceConsumer.CalServiceReference.HelloWorldResponseBody Body) {
+        public HelloWorldResponse(WebServiceConsumer.CalcServiceReference.HelloWorldResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -91,12 +91,12 @@ namespace WebServiceConsumer.CalServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CalculationWebServiceSoapChannel : WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap, System.ServiceModel.IClientChannel {
+    public interface CalculationWebServiceSoapChannel : WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CalculationWebServiceSoapClient : System.ServiceModel.ClientBase<WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap>, WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap {
+    public partial class CalculationWebServiceSoapClient : System.ServiceModel.ClientBase<WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap>, WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap {
         
         public CalculationWebServiceSoapClient() {
         }
@@ -118,26 +118,26 @@ namespace WebServiceConsumer.CalServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebServiceConsumer.CalServiceReference.HelloWorldResponse WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap.HelloWorld(WebServiceConsumer.CalServiceReference.HelloWorldRequest request) {
+        WebServiceConsumer.CalcServiceReference.HelloWorldResponse WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.HelloWorld(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request) {
             return base.Channel.HelloWorld(request);
         }
         
         public string HelloWorld() {
-            WebServiceConsumer.CalServiceReference.HelloWorldRequest inValue = new WebServiceConsumer.CalServiceReference.HelloWorldRequest();
-            inValue.Body = new WebServiceConsumer.CalServiceReference.HelloWorldRequestBody();
-            WebServiceConsumer.CalServiceReference.HelloWorldResponse retVal = ((WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap)(this)).HelloWorld(inValue);
+            WebServiceConsumer.CalcServiceReference.HelloWorldRequest inValue = new WebServiceConsumer.CalcServiceReference.HelloWorldRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.HelloWorldRequestBody();
+            WebServiceConsumer.CalcServiceReference.HelloWorldResponse retVal = ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).HelloWorld(inValue);
             return retVal.Body.HelloWorldResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebServiceConsumer.CalServiceReference.HelloWorldResponse> WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap.HelloWorldAsync(WebServiceConsumer.CalServiceReference.HelloWorldRequest request) {
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.HelloWorldResponse> WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.HelloWorldAsync(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request) {
             return base.Channel.HelloWorldAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebServiceConsumer.CalServiceReference.HelloWorldResponse> HelloWorldAsync() {
-            WebServiceConsumer.CalServiceReference.HelloWorldRequest inValue = new WebServiceConsumer.CalServiceReference.HelloWorldRequest();
-            inValue.Body = new WebServiceConsumer.CalServiceReference.HelloWorldRequestBody();
-            return ((WebServiceConsumer.CalServiceReference.CalculationWebServiceSoap)(this)).HelloWorldAsync(inValue);
+        public System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.HelloWorldResponse> HelloWorldAsync() {
+            WebServiceConsumer.CalcServiceReference.HelloWorldRequest inValue = new WebServiceConsumer.CalcServiceReference.HelloWorldRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.HelloWorldRequestBody();
+            return ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).HelloWorldAsync(inValue);
         }
         
         public int Add(int num1, int num2) {
