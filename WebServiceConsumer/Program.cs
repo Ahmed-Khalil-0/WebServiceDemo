@@ -10,6 +10,7 @@ namespace WebServiceConsumer
     {
         static void Main(string[] args)
         {
+            //Console.Write("2 + 4 = {0}", myMathService.Add(2,4));
         }
     }
 }
