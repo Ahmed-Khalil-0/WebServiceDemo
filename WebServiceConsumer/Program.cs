@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebServiceConsumer.CalServiceReference;
+using WebServiceConsumer.CalcServiceReference;
 
 namespace WebServiceConsumer
 {
@@ -19,7 +19,7 @@ namespace WebServiceConsumer
         static void ConsumeWebService()
         {
             CalculationWebServiceSoapClient myMathService = new CalculationWebServiceSoapClient();
-            int c = myMathService.Add(56, 62);
+            int c = myMathService.Add(6, 4);
             Console.WriteLine(c);
             Console.WriteLine(myMathService.HelloWorld());
             Console.ReadLine();
