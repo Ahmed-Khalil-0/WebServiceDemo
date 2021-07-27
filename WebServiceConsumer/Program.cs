@@ -21,7 +21,8 @@ namespace WebServiceConsumer
             CalculationWebServiceSoapClient myMathService = new CalculationWebServiceSoapClient();
             int c = myMathService.Add(56, 62);
             Console.WriteLine(c);
-            //Console.Write("2 + 4 = {0}", myMathService.Add(2,4));
+            Console.WriteLine(myMathService.HelloWorld());
+            Console.ReadLine();
         }
     }
 }

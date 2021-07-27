@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2e084cf2-74db-4357-9107-702e0f1c7918" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9ef550c0-4f73-4929-9f62-8aec6f4c273e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:60118/CalculationWebService.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.10.193/test/calculationwebservice.asmx " Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CalculationWebService.wsdl" MetadataType="Wsdl" ID="ab5e3376-dbe7-45ee-a7ea-6876c7c4a345" SourceId="1" SourceUrl="http://localhost:60118/CalculationWebService.asmx?wsdl" />
-    <MetadataFile FileName="CalculationWebService.disco" MetadataType="Disco" ID="52aba109-c0b4-4592-b11d-32fe7204765e" SourceId="1" SourceUrl="http://localhost:60118/CalculationWebService.asmx?disco" />
+    <MetadataFile FileName="calculationwebservice.wsdl" MetadataType="Wsdl" ID="81aaaf09-8842-497d-bb6f-fedf914d2f5e" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?wsdl" />
+    <MetadataFile FileName="calculationwebservice.disco" MetadataType="Disco" ID="c1018808-0c53-41f8-9b18-566ad83be3e4" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
