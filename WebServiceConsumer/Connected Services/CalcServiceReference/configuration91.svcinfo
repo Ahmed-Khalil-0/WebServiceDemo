@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="BRQbuESJg+YYUDoORaaWNwjdB0M=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="0b3TuJWeWNNNO8BvQUR+1c1+O/A=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="CalculationWebServiceSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="CalculationWebServiceSoap" contract="CalcServiceReference.CalculationWebServiceSoap" bindingType="basicHttpBinding" address="http://localhost:60118/CalculationWebService.asmx" bindingConfiguration="CalculationWebServiceSoap">
+    <endpoint name="CalculationWebServiceSoap" contract="CalcServiceReference.CalculationWebServiceSoap" bindingType="basicHttpBinding" address="http://192.168.10.193/test/calculationwebservice.asmx" bindingConfiguration="CalculationWebServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://192.168.10.193/test/calculationwebservice.asmx</serializedValue>

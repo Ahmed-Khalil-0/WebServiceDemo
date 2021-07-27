@@ -21,6 +21,7 @@ namespace WebServiceConsumer
             CalculationWebServiceSoapClient myMathService = new CalculationWebServiceSoapClient();
             int c = myMathService.Add(6, 4);
             Console.WriteLine(c);
+            var v = myMathService.GetEmployeeByID(6);
             Console.WriteLine(myMathService.HelloWorld());
             Console.ReadLine();
         }

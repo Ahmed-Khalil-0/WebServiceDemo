@@ -95,7 +95,6 @@
     <Build Include="Security\Production.sql" />
     <Build Include="Security\Sales.sql" />
     <Build Include="Security\Stats.sql" />
-    <Build Include="dbo\Tables\test.sql" />
     <Build Include="HR\spEmployeeLookUp.sql" />
   </ItemGroup>
 </Project>

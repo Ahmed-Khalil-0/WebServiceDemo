@@ -9,24 +9,250 @@
 //------------------------------------------------------------------------------
 
 namespace WebServiceConsumer.CalcServiceReference {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EmployeeModel", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class EmployeeModel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int EmpidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleOfCourtesyField;
+        
+        private System.DateTime BirthDateField;
+        
+        private System.DateTime HireDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RegionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PostalCodeField;
+        
+        private System.Nullable<int> MgridField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int Empid {
+            get {
+                return this.EmpidField;
+            }
+            set {
+                if ((this.EmpidField.Equals(value) != true)) {
+                    this.EmpidField = value;
+                    this.RaisePropertyChanged("Empid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Title {
+            get {
+                return this.TitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
+                    this.TitleField = value;
+                    this.RaisePropertyChanged("Title");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string TitleOfCourtesy {
+            get {
+                return this.TitleOfCourtesyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleOfCourtesyField, value) != true)) {
+                    this.TitleOfCourtesyField = value;
+                    this.RaisePropertyChanged("TitleOfCourtesy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public System.DateTime BirthDate {
+            get {
+                return this.BirthDateField;
+            }
+            set {
+                if ((this.BirthDateField.Equals(value) != true)) {
+                    this.BirthDateField = value;
+                    this.RaisePropertyChanged("BirthDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
+        public System.DateTime HireDate {
+            get {
+                return this.HireDateField;
+            }
+            set {
+                if ((this.HireDateField.Equals(value) != true)) {
+                    this.HireDateField = value;
+                    this.RaisePropertyChanged("HireDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string Address {
+            get {
+                return this.AddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
+                    this.AddressField = value;
+                    this.RaisePropertyChanged("Address");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string Region {
+            get {
+                return this.RegionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RegionField, value) != true)) {
+                    this.RegionField = value;
+                    this.RaisePropertyChanged("Region");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string PostalCode {
+            get {
+                return this.PostalCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PostalCodeField, value) != true)) {
+                    this.PostalCodeField = value;
+                    this.RaisePropertyChanged("PostalCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public System.Nullable<int> Mgrid {
+            get {
+                return this.MgridField;
+            }
+            set {
+                if ((this.MgridField.Equals(value) != true)) {
+                    this.MgridField = value;
+                    this.RaisePropertyChanged("Mgrid");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://khala.com/", ConfigurationName="CalcServiceReference.CalculationWebServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CalcServiceReference.CalculationWebServiceSoap")]
     public interface CalculationWebServiceSoap {
         
-        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://khala.com/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/HelloWorld", ReplyAction="*")]
+        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
         WebServiceConsumer.CalcServiceReference.HelloWorldResponse HelloWorld(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/HelloWorld", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
         System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.HelloWorldResponse> HelloWorldAsync(WebServiceConsumer.CalcServiceReference.HelloWorldRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/Add", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
         int Add(int num1, int num2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://khala.com/Add", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
         System.Threading.Tasks.Task<int> AddAsync(int num1, int num2);
+        
+        // CODEGEN: Generating message contract since element name GetEmployeeByIDResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetEmployeeByID", ReplyAction="*")]
+        WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse GetEmployeeByID(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetEmployeeByID", ReplyAction="*")]
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse> GetEmployeeByIDAsync(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -35,7 +261,7 @@ namespace WebServiceConsumer.CalcServiceReference {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class HelloWorldRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://khala.com/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
         public WebServiceConsumer.CalcServiceReference.HelloWorldRequestBody Body;
         
         public HelloWorldRequest() {
@@ -62,7 +288,7 @@ namespace WebServiceConsumer.CalcServiceReference {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class HelloWorldResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://khala.com/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
         public WebServiceConsumer.CalcServiceReference.HelloWorldResponseBody Body;
         
         public HelloWorldResponse() {
@@ -76,7 +302,7 @@ namespace WebServiceConsumer.CalcServiceReference {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://khala.com/")]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class HelloWorldResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
@@ -87,6 +313,74 @@ namespace WebServiceConsumer.CalcServiceReference {
         
         public HelloWorldResponseBody(string HelloWorldResult) {
             this.HelloWorldResult = HelloWorldResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetEmployeeByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetEmployeeByID", Namespace="http://tempuri.org/", Order=0)]
+        public WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequestBody Body;
+        
+        public GetEmployeeByIDRequest() {
+        }
+        
+        public GetEmployeeByIDRequest(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetEmployeeByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int num1;
+        
+        public GetEmployeeByIDRequestBody() {
+        }
+        
+        public GetEmployeeByIDRequestBody(int num1) {
+            this.num1 = num1;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetEmployeeByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetEmployeeByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponseBody Body;
+        
+        public GetEmployeeByIDResponse() {
+        }
+        
+        public GetEmployeeByIDResponse(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetEmployeeByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WebServiceConsumer.CalcServiceReference.EmployeeModel GetEmployeeByIDResult;
+        
+        public GetEmployeeByIDResponseBody() {
+        }
+        
+        public GetEmployeeByIDResponseBody(WebServiceConsumer.CalcServiceReference.EmployeeModel GetEmployeeByIDResult) {
+            this.GetEmployeeByIDResult = GetEmployeeByIDResult;
         }
     }
     
@@ -146,6 +440,31 @@ namespace WebServiceConsumer.CalcServiceReference {
         
         public System.Threading.Tasks.Task<int> AddAsync(int num1, int num2) {
             return base.Channel.AddAsync(num1, num2);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.GetEmployeeByID(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest request) {
+            return base.Channel.GetEmployeeByID(request);
+        }
+        
+        public WebServiceConsumer.CalcServiceReference.EmployeeModel GetEmployeeByID(int num1) {
+            WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest inValue = new WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequestBody();
+            inValue.Body.num1 = num1;
+            WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse retVal = ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).GetEmployeeByID(inValue);
+            return retVal.Body.GetEmployeeByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse> WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.GetEmployeeByIDAsync(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest request) {
+            return base.Channel.GetEmployeeByIDAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse> GetEmployeeByIDAsync(int num1) {
+            WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest inValue = new WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequestBody();
+            inValue.Body.num1 = num1;
+            return ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).GetEmployeeByIDAsync(inValue);
         }
     }
 }

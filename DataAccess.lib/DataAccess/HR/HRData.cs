@@ -13,7 +13,7 @@ namespace DataAccess.lib.DataAccess.HR
         public List<EmployeeModel> GetEmployeeById(int id)
         {
             SQLDataAccess sql = new SQLDataAccess();
-            return sql.LoadData<EmployeeModel, int>("dbo.spEmployeeLookUp", id, "DefaultConnection");
+            return sql.LoadData<EmployeeModel, dynamic>("dbo.spEmployeeLookUp", new { id = id }, "DefaultConnection");
         }
     }
 }

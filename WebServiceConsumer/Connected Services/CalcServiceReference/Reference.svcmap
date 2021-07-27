@@ -22,8 +22,8 @@
     <MetadataSource Address="http://192.168.10.193/test/calculationwebservice.asmx " Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CalculationWebService.wsdl" MetadataType="Wsdl" ID="879a0764-ed17-43ff-b46d-f52efa866555" SourceId="1" SourceUrl="http://localhost:60118/CalculationWebService.asmx?wsdl" />
-    <MetadataFile FileName="CalculationWebService.disco" MetadataType="Disco" ID="b8364636-8da3-4046-b320-8c3a0de4799c" SourceId="1" SourceUrl="http://localhost:60118/CalculationWebService.asmx?disco" />
+    <MetadataFile FileName="calculationwebservice1.wsdl" MetadataType="Wsdl" ID="a4eca7b9-d218-49ac-a9ae-0e44e2884090" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?wsdl" />
+    <MetadataFile FileName="calculationwebservice1.disco" MetadataType="Disco" ID="75fdf0b6-1a71-48e1-b61e-287019e82ff0" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
