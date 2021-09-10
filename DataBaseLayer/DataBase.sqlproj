@@ -96,5 +96,6 @@
     <Build Include="Security\Sales.sql" />
     <Build Include="Security\Stats.sql" />
     <Build Include="HR\spEmployeeLookUp.sql" />
+    <Build Include="HR\spGetAllEmployees.sql" />
   </ItemGroup>
 </Project>

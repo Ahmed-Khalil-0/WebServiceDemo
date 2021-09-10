@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccess.lib.DataAccess.HR.HRData" Collapsed="true">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\HR\HRData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.lib.Internal.Models.EmployeeModel" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgAACAEBIIAAAAAQAACAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Internal\Models\EmployeeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.lib.Internal.SQLDataAccess" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Internal\SQLDataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.lib.Internal.Models.CustomerModel" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAgAAAAAAIIAAgAAAAAAIAAAACAAACIAAACAA=</HashCode>
+      <FileName>Internal\Models\CustomerModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

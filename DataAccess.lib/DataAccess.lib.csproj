@@ -45,12 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Internal\Models\CustomerModel.cs" />
     <Compile Include="DataAccess\HR\HRData.cs" />
     <Compile Include="Internal\Models\EmployeeModel.cs" />
+    <Compile Include="Internal\Models\OrderDetail.cs" />
+    <Compile Include="Internal\Models\OrderModel.cs" />
+    <Compile Include="Internal\Models\ShipperModel.cs" />
     <Compile Include="Internal\SQLDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

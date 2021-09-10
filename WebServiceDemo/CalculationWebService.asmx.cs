@@ -35,7 +35,14 @@ namespace WebServiceDemo
         public EmployeeModel GetEmployeeByID(int num1)
         {
             HRData hRData = new HRData();
-            return hRData.GetEmployeeById(num1).First();
+            return hRData.GetEmployeeById(num1);
+        }
+
+        [WebMethod]
+        public List<EmployeeModel> GetAllEmployee()
+        {
+            HRData hRData = new HRData();
+            return hRData.GetAllEmployees();
         }
     }
 }
