@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.Services;
 
 namespace WebServiceDemo
@@ -15,7 +16,7 @@ namespace WebServiceDemo
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    //[System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class CalculationWebService : System.Web.Services.WebService
     {
 
@@ -39,10 +40,12 @@ namespace WebServiceDemo
         }
 
         [WebMethod]
-        public List<EmployeeModel> GetAllEmployee()
+        public void GetAllEmployee()
         {
             HRData hRData = new HRData();
-            return hRData.GetAllEmployees();
+            JavaScriptSerializer js = new JavaScriptSerializer();
+
+            Context.Response.Write(js.Serialize(hRData.GetAllEmployees()));
         }
     }
 }
