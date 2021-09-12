@@ -73,6 +73,8 @@
     <Folder Include="Sales\Views\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="Security\" />
+    <Folder Include="Auth" />
+    <Folder Include="Auth\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="HR\Tables\Employees.sql" />
@@ -97,5 +99,7 @@
     <Build Include="Security\Stats.sql" />
     <Build Include="HR\spEmployeeLookUp.sql" />
     <Build Include="HR\spGetAllEmployees.sql" />
+    <Build Include="dbo\Tables\Membership.sql" />
+    <Build Include="Auth\Functions\spMembershipAuth.sql" />
   </ItemGroup>
 </Project>

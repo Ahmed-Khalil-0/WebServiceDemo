@@ -45,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\Autho\Login.cs" />
     <Compile Include="Internal\Models\CustomerModel.cs" />
     <Compile Include="DataAccess\HR\HRData.cs" />
     <Compile Include="Internal\Models\EmployeeModel.cs" />
+    <Compile Include="Internal\Models\MembershipModel.cs" />
     <Compile Include="Internal\Models\OrderDetail.cs" />
     <Compile Include="Internal\Models\OrderModel.cs" />
     <Compile Include="Internal\Models\ShipperModel.cs" />

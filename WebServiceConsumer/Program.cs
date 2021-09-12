@@ -23,7 +23,7 @@ namespace WebServiceConsumer
             Console.WriteLine(c);
             var v = myMathService.GetEmployeeByID(6);
 
-            
+            var s = myMathService.GetAllEmployee();
             Console.WriteLine(myMathService.HelloWorld());
             Console.ReadLine();
         }

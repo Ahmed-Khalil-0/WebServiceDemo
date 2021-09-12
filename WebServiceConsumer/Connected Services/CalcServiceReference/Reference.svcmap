@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.10.193/test/calculationwebservice.asmx " Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.10.191/test/calculationwebservice.asmx " Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="calculationwebservice1.wsdl" MetadataType="Wsdl" ID="a4eca7b9-d218-49ac-a9ae-0e44e2884090" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?wsdl" />
-    <MetadataFile FileName="calculationwebservice1.disco" MetadataType="Disco" ID="75fdf0b6-1a71-48e1-b61e-287019e82ff0" SourceId="1" SourceUrl="http://192.168.10.193/test/calculationwebservice.asmx?disco" />
+    <MetadataFile FileName="calculationwebservice.disco" MetadataType="Disco" ID="7af26346-53b6-4670-8be3-ad644878ee14" SourceId="1" SourceUrl="http://192.168.10.191/test/calculationwebservice.asmx?disco" />
+    <MetadataFile FileName="calculationwebservice.wsdl" MetadataType="Wsdl" ID="0fd52c31-536f-453a-9c20-230ee3c32fb2" SourceId="1" SourceUrl="http://192.168.10.191/test/calculationwebservice.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

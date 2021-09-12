@@ -58,8 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\CalcServiceReference\calculationwebservice1.wsdl" />
+    <None Include="Connected Services\CalcServiceReference\calculationwebservice.wsdl" />
     <None Include="Connected Services\CalcServiceReference\WebServiceConsumer.CalcServiceReference.EmployeeModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CalcServiceReference\WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\CalcServiceReference\WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse.datasource">
@@ -88,7 +91,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalcServiceReference\calculationwebservice1.disco" />
+    <None Include="Connected Services\CalcServiceReference\calculationwebservice.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

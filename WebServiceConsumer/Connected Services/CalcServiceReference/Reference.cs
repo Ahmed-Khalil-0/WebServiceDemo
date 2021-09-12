@@ -253,6 +253,13 @@ namespace WebServiceConsumer.CalcServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetEmployeeByID", ReplyAction="*")]
         System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetEmployeeByIDResponse> GetEmployeeByIDAsync(WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllEmployeeResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllEmployee", ReplyAction="*")]
+        WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse GetAllEmployee(WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllEmployee", ReplyAction="*")]
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse> GetAllEmployeeAsync(WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -384,6 +391,67 @@ namespace WebServiceConsumer.CalcServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllEmployeeRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllEmployee", Namespace="http://tempuri.org/", Order=0)]
+        public WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequestBody Body;
+        
+        public GetAllEmployeeRequest() {
+        }
+        
+        public GetAllEmployeeRequest(WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllEmployeeRequestBody {
+        
+        public GetAllEmployeeRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllEmployeeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllEmployeeResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponseBody Body;
+        
+        public GetAllEmployeeResponse() {
+        }
+        
+        public GetAllEmployeeResponse(WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllEmployeeResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WebServiceConsumer.CalcServiceReference.EmployeeModel[] GetAllEmployeeResult;
+        
+        public GetAllEmployeeResponseBody() {
+        }
+        
+        public GetAllEmployeeResponseBody(WebServiceConsumer.CalcServiceReference.EmployeeModel[] GetAllEmployeeResult) {
+            this.GetAllEmployeeResult = GetAllEmployeeResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface CalculationWebServiceSoapChannel : WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -465,6 +533,29 @@ namespace WebServiceConsumer.CalcServiceReference {
             inValue.Body = new WebServiceConsumer.CalcServiceReference.GetEmployeeByIDRequestBody();
             inValue.Body.num1 = num1;
             return ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).GetEmployeeByIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.GetAllEmployee(WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest request) {
+            return base.Channel.GetAllEmployee(request);
+        }
+        
+        public WebServiceConsumer.CalcServiceReference.EmployeeModel[] GetAllEmployee() {
+            WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest inValue = new WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequestBody();
+            WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse retVal = ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).GetAllEmployee(inValue);
+            return retVal.Body.GetAllEmployeeResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse> WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap.GetAllEmployeeAsync(WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest request) {
+            return base.Channel.GetAllEmployeeAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WebServiceConsumer.CalcServiceReference.GetAllEmployeeResponse> GetAllEmployeeAsync() {
+            WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest inValue = new WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequest();
+            inValue.Body = new WebServiceConsumer.CalcServiceReference.GetAllEmployeeRequestBody();
+            return ((WebServiceConsumer.CalcServiceReference.CalculationWebServiceSoap)(this)).GetAllEmployeeAsync(inValue);
         }
     }
 }

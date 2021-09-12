@@ -57,6 +57,21 @@
           <s:element minOccurs="1" maxOccurs="1" name="Mgrid" nillable="true" type="s:int" />
         </s:sequence>
       </s:complexType>
+      <s:element name="GetAllEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllEmployeeResult" type="tns:ArrayOfEmployeeModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEmployeeModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EmployeeModel" nillable="true" type="tns:EmployeeModel" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -77,6 +92,12 @@
   <wsdl:message name="GetEmployeeByIDSoapOut">
     <wsdl:part name="parameters" element="tns:GetEmployeeByIDResponse" />
   </wsdl:message>
+  <wsdl:message name="GetAllEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllEmployee" />
+  </wsdl:message>
+  <wsdl:message name="GetAllEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllEmployeeResponse" />
+  </wsdl:message>
   <wsdl:portType name="CalculationWebServiceSoap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -89,6 +110,10 @@
     <wsdl:operation name="GetEmployeeByID">
       <wsdl:input message="tns:GetEmployeeByIDSoapIn" />
       <wsdl:output message="tns:GetEmployeeByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployee">
+      <wsdl:input message="tns:GetAllEmployeeSoapIn" />
+      <wsdl:output message="tns:GetAllEmployeeSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="CalculationWebServiceSoap" type="tns:CalculationWebServiceSoap">
@@ -113,6 +138,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetEmployeeByID">
       <soap:operation soapAction="http://tempuri.org/GetEmployeeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployee">
+      <soap:operation soapAction="http://tempuri.org/GetAllEmployee" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -150,13 +184,22 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetAllEmployee">
+      <soap12:operation soapAction="http://tempuri.org/GetAllEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="CalculationWebService">
     <wsdl:port name="CalculationWebServiceSoap" binding="tns:CalculationWebServiceSoap">
-      <soap:address location="http://192.168.10.193/test/calculationwebservice.asmx" />
+      <soap:address location="http://192.168.10.191/test/calculationwebservice.asmx" />
     </wsdl:port>
     <wsdl:port name="CalculationWebServiceSoap12" binding="tns:CalculationWebServiceSoap12">
-      <soap12:address location="http://192.168.10.193/test/calculationwebservice.asmx" />
+      <soap12:address location="http://192.168.10.191/test/calculationwebservice.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

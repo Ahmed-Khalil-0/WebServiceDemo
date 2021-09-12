@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Services;
+using WebServiceDemo.Autho;
 
 namespace WebServiceDemo
 {
@@ -19,7 +20,7 @@ namespace WebServiceDemo
     [System.Web.Script.Services.ScriptService]
     public class CalculationWebService : System.Web.Services.WebService
     {
-
+       
         [WebMethod]
         public string HelloWorld()
         {
@@ -46,6 +47,17 @@ namespace WebServiceDemo
             JavaScriptSerializer js = new JavaScriptSerializer();
 
             Context.Response.Write(js.Serialize(hRData.GetAllEmployees()));
+        }
+
+        [WebMethod]
+        public void Authonticate(string userName, string password)
+        {
+            bool authonticated = LoginAutho.LoginAuthontication(userName, password);
+            if (!authonticated)
+                Context.Response.Write("Unauthorized Access"); 
+            else
+                Context.Response.Write("Authorized Access");
+
         }
     }
 }
