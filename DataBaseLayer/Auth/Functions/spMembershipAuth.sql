@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spMembershipAuth]
-	@param1 nvarchar
+	@UserName NVARCHAR(100)
 AS
-	SELECT [UserName], [Password] from dbo.Membership where UserName = @param1
+	SELECT [UserName], [Password] from dbo.Membership where UserName = @UserName
 Go
