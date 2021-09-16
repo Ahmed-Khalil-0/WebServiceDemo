@@ -10,7 +10,7 @@
     [city]            NVARCHAR (15) NOT NULL,
     [region]          NVARCHAR (15) NULL,
     [postalcode]      NVARCHAR (10) NULL,
-    [country]         NVARCHAR (15) NOT NULL,
+    [country]         NVARCHAR (15) NULL,
     [phone]           NVARCHAR (24) NOT NULL,
     [mgrid]           INT           NULL,
     CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED ([empid] ASC),

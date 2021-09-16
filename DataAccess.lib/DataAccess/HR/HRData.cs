@@ -21,5 +21,18 @@ namespace DataAccess.lib.DataAccess.HR
             SQLDataAccess sql = new SQLDataAccess();
             return sql.LoadData<EmployeeModel, dynamic>("dbo.spGetAllEmployees", new { }, "DefaultConnection");
         }
+
+        public void AddEmployee(EmployeeModel employee)
+        {
+            SQLDataAccess sql = new SQLDataAccess();
+            sql.SaveDate<dynamic>("dbo.spInsertEmployee", employee, "DefaultConnection");
+        }
+
+        public void DeleteEmployee(int id)
+        {
+            SQLDataAccess sql = new SQLDataAccess();
+            sql.SaveDate<dynamic>("dbo.spDeleteEmployee", new { id = id }, "DefaultConnection");
+        }
+
     }
 }

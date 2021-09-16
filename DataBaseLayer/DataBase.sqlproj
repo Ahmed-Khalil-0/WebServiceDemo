@@ -75,6 +75,7 @@
     <Folder Include="Security\" />
     <Folder Include="Auth" />
     <Folder Include="Auth\Functions" />
+    <Folder Include="HR\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="HR\Tables\Employees.sql" />
@@ -97,9 +98,17 @@
     <Build Include="Security\Production.sql" />
     <Build Include="Security\Sales.sql" />
     <Build Include="Security\Stats.sql" />
-    <Build Include="HR\spEmployeeLookUp.sql" />
-    <Build Include="HR\spGetAllEmployees.sql" />
-    <Build Include="dbo\Tables\Membership.sql" />
     <Build Include="Auth\Functions\spMembershipAuth.sql" />
+    <Build Include="HR\Functions\spEmployeeLookUp.sql" />
+    <Build Include="HR\Functions\spGetAllEmployees.sql" />
+    <Build Include="HR\Functions\spInsertEmployee.sql" />
+    <Build Include="HR\Functions\spDeleteEmployee.sql" />
+    <Build Include="dbo\Tables\test.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\__MigrationHistory.sql" />
   </ItemGroup>
 </Project>
